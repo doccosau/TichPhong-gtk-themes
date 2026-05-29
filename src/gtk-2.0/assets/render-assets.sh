@@ -6,7 +6,7 @@ OPTIPNG="/usr/bin/optipng"
 INDEX="assets.txt"
 
 for variant in '' '-dark'; do
-  for color in '-grey' '-ruby' '-doder' '-beryl' '-amethyst' '-jade'; do
+  for color in '-zen' '-cinnabar' '-jade' '-mystic' '-purple' '-tet'; do
 
     ASSETS_DIR="tichphong${color}/assets${variant}"
     SRC_FILE="tichphong${color}/assets${variant}.svg"

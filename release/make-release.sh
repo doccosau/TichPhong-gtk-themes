@@ -6,7 +6,7 @@ THEME_NAME=TichPhong
 
 _COLOR_VARIANTS=('' '-light' '-dark')
 _SIZE_VARIANTS=('' '-compact')
-_THEME_VARIANTS=('-grey' '-doder' '-beryl' '-ruby' '-jade' '-amethyst')
+_THEME_VARIANTS=('-zen' '-jade' '-mystic' '-cinnabar' '-purple' '-tet')
 
 if [ ! -z "${SIZE_VARIANTS:-}" ]; then
   IFS=', ' read -r -a _SIZE_VARIANTS <<< "${SIZE_VARIANTS:-}"

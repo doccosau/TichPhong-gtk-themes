@@ -5,7 +5,7 @@ OPTIPNG="/usr/bin/optipng"
 
 INDEX="assets.txt"
 
-for color in '-grey' '-ruby' '-doder' '-beryl' '-amethyst' '-jade'; do
+for color in '-zen' '-cinnabar' '-jade' '-mystic' '-purple' '-tet'; do
 
 ASSETS_DIR="assets${color}"
 SRC_FILE="assets${color}.svg"
