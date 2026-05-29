@@ -1,7 +1,2 @@
 *-temp.scss
-release/TichPhong-amethyst.tar.xz
-release/TichPhong-beryl.tar.xz
-release/TichPhong-doder.tar.xz
-release/TichPhong-grey.tar.xz
-release/TichPhong-jade.tar.xz
-release/TichPhong-ruby.tar.xz
+release/*.tar.xz
