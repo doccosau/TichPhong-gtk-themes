@@ -1,0 +1,43 @@
+/* Switches */
+
+.toggle-switch {
+  color: transparent;
+  margin: 0 $base_padding;
+  width: 44px;
+  height: 26px;
+  background-size: contain;
+  background-image: url("assets/toggle-off.svg");
+  background-color: transparent;
+
+  StIcon {
+    icon-size: 0;
+  }
+
+  .handle {
+    margin: 0;
+    width: 0;
+    height: 0;
+    background: none;
+    box-shadow: none;
+  }
+
+  &:hover {
+    background-color: transparent;
+    color: transparent;
+  }
+
+  &:checked {
+    background-color: transparent;
+    color: transparent;
+    background-image: url("assets/toggle-on.svg");
+
+    &:hover {
+      background-color: transparent;
+      color: transparent;
+    }
+
+    .handle {
+      background: none;
+    }
+  }
+}
