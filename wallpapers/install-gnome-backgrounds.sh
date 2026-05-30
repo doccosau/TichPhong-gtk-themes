@@ -57,6 +57,7 @@ install() {
   mkdir -p ${BACKGROUND_DIR}/${WALLPAPER_NAME}
 
   cp -a --no-preserve=ownership ${REPO_DIR}/${WALLPAPER_NAME}*.png ${BACKGROUND_DIR}/${WALLPAPER_NAME}
+  cp -a --no-preserve=ownership ${REPO_DIR}/tichphong-set-01 ${BACKGROUND_DIR}/${WALLPAPER_NAME}
   cp -a --no-preserve=ownership ${REPO_DIR}/${WALLPAPER_NAME}-timed.xml ${BACKGROUND_DIR}/${WALLPAPER_NAME}
   cp -a --no-preserve=ownership ${REPO_DIR}/${WALLPAPER_NAME}.xml ${PROPERTIES_DIR}
 }
