@@ -13,7 +13,7 @@ Bộ theme này được phát triển dựa trên nền tảng của Vimix (vin
 
 ### Phiên bản màu sắc (Variants)
 
-TichPhong Theme cung cấp các phiên bản màu sắc độc quyền:
+TichPhong Theme cung cấp 36 biến thể: 6 màu nhấn x 3 chế độ màu x 2 mật độ giao diện.
 
 - **Jade (Xanh ngọc)** - *Mặc định*: Thanh tao, nhẹ nhàng.
 - **Cinnabar (Đỏ chu sa)**: Nhiệt huyết, cổ điển.
@@ -21,6 +21,8 @@ TichPhong Theme cung cấp các phiên bản màu sắc độc quyền:
 - **Mystic (Xám huyền bí)**: Hiện đại, tối giản.
 - **Purple (Tím)**: Sáng tạo, mộng mơ.
 - **Tet (Tết)**: Đỏ vàng rực rỡ, mang không khí lễ hội.
+
+Mỗi màu có các chế độ `standard`, `light`, `dark` và kích thước `standard`, `compact`. Theme mặc định khuyến nghị cho TichPhong OS là `TichPhong-light-jade`.
 
 ### Cài đặt yêu cầu (Dependencies)
 
@@ -58,10 +60,10 @@ Bạn có thể chạy script cài đặt trực tiếp từ terminal:
 -r, --remove,
 -u, --uninstall         Gỡ cài đặt theme
 
--tweaks, --tweaks       Chỉ định các tùy chỉnh thêm [flat|grey|mix|translucent]
+-tweaks, --tweaks       Chỉ định các tùy chỉnh thêm [flat|zen|mix|translucent]
                         1. flat         Nút điều khiển cửa sổ phẳng
-                        2. grey         Nút điều khiển cửa sổ màu xám
-                        3. mix          Pha trộn màu theme và xám đậm cho nền ở chế độ Dark
+                        2. zen          Nút điều khiển cửa sổ phong cách Zen
+                        3. mix          Pha trộn màu theme và Zen tối cho nền ở chế độ Dark
                         4. translucent  Phiên bản panel trong suốt
 
 -h, --help              Hiển thị trợ giúp
@@ -71,6 +73,12 @@ Bạn có thể chạy script cài đặt trực tiếp từ terminal:
 
 ```sh
 ./install.sh -t all -s all
+```
+
+**Ví dụ:** Cài theme mặc định khuyến nghị:
+
+```sh
+./install.sh -t jade -c light -s standard
 ```
 
 ### Đóng góp và Phát triển
@@ -89,7 +97,7 @@ This theme is developed based on Vimix (vinceliuice) and Materia (nana-4). Since
 
 ### Color Variants
 
-TichPhong Theme provides exclusive color variants:
+TichPhong Theme provides 36 variants: 6 accent colors x 3 color modes x 2 UI densities.
 
 - **Jade** - *Default*: Elegant and gentle.
 - **Cinnabar**: Enthusiastic and classic.
@@ -97,6 +105,8 @@ TichPhong Theme provides exclusive color variants:
 - **Mystic**: Modern and minimalist.
 - **Purple**: Creative and dreamy.
 - **Tet**: Vibrant red and yellow, bringing a festive atmosphere.
+
+Each accent includes `standard`, `light`, `dark` modes and `standard`, `compact` sizes. The recommended default for TichPhong OS is `TichPhong-light-jade`.
 
 ### Dependencies
 
@@ -134,10 +144,10 @@ You can run the installation script directly from the terminal:
 -r, --remove,
 -u, --uninstall         Uninstall/Remove installed themes
 
--tweaks, --tweaks       Specify additional tweaks [flat|grey|mix|translucent]
+-tweaks, --tweaks       Specify additional tweaks [flat|zen|mix|translucent]
                         1. flat         Flat window control buttons
-                        2. grey         Grey window control buttons
-                        3. mix          Mix theme color and dark grey for background in Dark mode
+                        2. zen          Zen-style window control buttons
+                        3. mix          Mix theme color and dark Zen tone for background in Dark mode
                         4. translucent  Translucent panel version
 
 -h, --help              Show help
@@ -147,6 +157,12 @@ You can run the installation script directly from the terminal:
 
 ```sh
 ./install.sh -t all -s all
+```
+
+**Example:** Install the recommended default theme:
+
+```sh
+./install.sh -t jade -c light -s standard
 ```
 
 ### Contribution and Development

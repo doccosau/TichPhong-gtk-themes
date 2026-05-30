@@ -1,11 +1,11 @@
 /* Slider */
 
-$slide_active_color: if($variant == 'dark' and $theme == 'grey', rgba(white, 0.85), $primary);
+$slide_active_color: if($variant == 'dark' and $theme == 'zen', rgba(white, 0.85), $primary);
 $slide_size: if($compact == 'false', 7px, 6px);
 
 .slider {
   height: 20px;
-  color: if($variant == 'dark' and $theme == 'grey', white, $primary);
+  color: if($variant == 'dark' and $theme == 'zen', white, $primary);
 
   -slider-height: 2px;
   -slider-background-color: $track; //background of the trough

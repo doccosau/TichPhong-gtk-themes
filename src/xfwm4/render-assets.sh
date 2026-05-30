@@ -6,10 +6,12 @@ OPTIPNG="/usr/bin/optipng"
 INDEX="assets.txt"
 
 for variant in '' '-dark'; do
-  for color in '-grey' '-doder'; do
+  for color in 'zen:grey' 'jade:doder'; do
 
-  ASSETS_DIR="assets${variant}${color}"
-  SRC_FILE="assets${variant}${color}.svg"
+  THEME_COLOR="${color%%:*}"
+  SOURCE_COLOR="${color##*:}"
+  ASSETS_DIR="assets${variant}-${THEME_COLOR}"
+  SRC_FILE="assets${variant}-${SOURCE_COLOR}.svg"
 
   for i in `cat $INDEX`
   do

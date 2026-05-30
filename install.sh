@@ -55,7 +55,7 @@ Usage: $0 [OPTION]...
 OPTIONS:
   -d, --dest DIR          Specify destination directory (Default: $DEST_DIR)
   -n, --name NAME         Specify theme name (Default: $THEME_NAME)
-  -t, --theme VARIANT     Specify theme color variant(s) [jade|mystic|cinnabar|purple|tet|zen|all] (Default: jade(blue))
+  -t, --theme VARIANT     Specify theme color variant(s) [jade|mystic|cinnabar|purple|tet|zen|all] (Default: jade)
   -c, --color VARIANT     Specify color variant(s) [standard|light|dark] (Default: All variants)
   -s, --size  VARIANT     Specify size variant [standard|compact|all] (Default: standard variant)
 
@@ -64,7 +64,7 @@ OPTIONS:
   -r, --remove,
   -u, --uninstall         Uninstall/Remove installed themes
 
-  -tweaks, --tweaks       Specify versions for tweaks [flat|zen|mix|translucent] (only nord and dracula can not mix use with!)
+  -tweaks, --tweaks       Specify versions for tweaks [flat|zen|mix|translucent]
                           1. flat         Flat and normal button style for windows control buttons
                           2. zen         Use zen windows control buttons in zen accent color variants
                           3. mix          Mix theme color and dark zen color for background color in darkmode variants

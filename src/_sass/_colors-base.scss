@@ -7,7 +7,7 @@ $theme_teal:       #14b8a6; // TichPhong Dark (Xanh Teal ngọc)
 $theme_red:        #b91c1c; // TichPhong Cinnabar (Đỏ Trầm)
 $theme_purple:     #8b5cf6; // TichPhong Purple (Tím Mộng Mơ)
 $theme_green:      #991b1b; // TichPhong Tet (Tết Nguyên Đán)
-$theme_grey:       #525252; // TichPhong Zen (Trầm Mặc)
+$theme_zen:        #525252; // TichPhong Zen (Trầm Mặc)
 $theme_base:       if($variant == 'light', #FFFFFF, #1e293b);
 $theme_background: if($variant == 'light', #faf8f3, #0f172a);
 
@@ -66,15 +66,15 @@ $theme_background: if($variant == 'light', #faf8f3, #0f172a);
     @if ($theme == 'cinnabar')     { @return $theme_red; }
     @if ($theme == 'purple') { @return $theme_purple; }
     @if ($theme == 'tet')     { @return $theme_green; }
-    @if ($theme == 'zen')     { @return $theme_grey; }
+    @if ($theme == 'zen')     { @return $theme_zen; }
   }
   @if ($state == 'contrast') { // entry/slider (focus)
     @if ($variant == 'light')  { @return rgba(black, 0.65); }
     @if ($variant == 'dark')   { @return rgba(white, 1); }
   }
-  @if ($state == 'default') { // for default mix grey color
+  @if ($state == 'default') { // for default mix Zen color
     @if ($theme == 'jade') or ($theme == 'mystic') or ($theme == 'purple') { @return $theme_blue; }
-    @else { @return $theme_grey; }
+    @else { @return $theme_zen; }
   }
 }
 
@@ -120,12 +120,12 @@ $theme_background: if($variant == 'light', #faf8f3, #0f172a);
     @return mix(primary(main), $color, $weight);
   }
   @if ($state == 'primary') {
-    @if ($theme != 'grey') {
+    @if ($theme != 'zen') {
       @return mix(primary(main), $color, $weight);
     } @else { @return $color; }
   }
-  @if ($state == 'default') { // for default mix grey color
-    @if ($theme != 'grey') {
+  @if ($state == 'default') { // for default mix Zen color
+    @if ($theme != 'zen') {
       @return mix(primary(default), $color, $weight);
     } @else { @return $color; }
   }
